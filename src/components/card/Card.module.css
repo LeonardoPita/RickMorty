@@ -1,6 +1,6 @@
 .cardDiv {
     margin: 10px 0;
-    width: 220px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -23,8 +23,8 @@
 
 .cardBtn {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 10px;
+    top: 10px;
     background-color: red;
     border: none;
     color: white;
@@ -34,13 +34,14 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    z-index: 100;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 180px;
     background-color: lightgray;
     padding: 10px;
     border-radius: 0px 0px 20px 0px;
@@ -52,4 +53,5 @@
 
 .details h2 {
     font-weight: 500;
+    font-size: 0.9rem;
 }
