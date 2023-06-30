@@ -1,4 +1,5 @@
 import './App.css';
+import style from './index.css'
 // import Card from './components/Card.jsx';
 import Cards from './components/cards/Cards.jsx';
 import SearchBar from './components/searchBar/SearchBar.jsx';
