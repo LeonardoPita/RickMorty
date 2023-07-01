@@ -1,7 +1,3 @@
-.navBack {
-    background-color: lightgray;
-}
-
 .navFlex {
     display: flex;
     justify-content: space-between;
@@ -9,9 +5,36 @@
     height: 60px;
 }
 
-.buttonGroup button{
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.buttonGroup button {
     margin-right: 60px;
 }
 
-.searchBar {
+.searchBar input {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    height: 23px;
+    position: relative;
+    top: 1px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }

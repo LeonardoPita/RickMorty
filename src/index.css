@@ -17,16 +17,28 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -38,4 +50,10 @@ img {
 .container {
   max-width: 1290px;
   margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.App {
+  background-image: url('../public/assets/images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg');
+  min-height: 100vh;
 }

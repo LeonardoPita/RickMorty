@@ -2,16 +2,13 @@ import style from './Card.module.css'
 
 export default function Card({ id, name, status, species, gender, origin, image, onClose }) {
    return (
-      <div className = {style.cardDiv}>
-         <button className= {style.cardBtn}  onClick={onClose}>X</button>
+      <div className={style.cardDiv}>
+         <button className={style.cardBtn} onClick={() => onClose(id)}>X</button>
+         <div className={style.name}>{name}</div>
          <img src={image} alt='' />
-         <div className= {style.details}>
-         <h2>ID: {id}</h2>
-         <h2>Name: {name}</h2>
-         <h2>Status: {status}</h2>
-         <h2>Species: {species}</h2>
-         <h2>Gender: {gender}</h2>
-         <h2>Origin: {origin}</h2>
+         <div className={style.details}>
+            <h2>{species}</h2>
+            <h2>{gender}</h2>
          </div>
       </div>
    );

@@ -1,14 +1,11 @@
 .cardDiv {
-    margin: 10px 0;
     width: 200px;
-    height: auto;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-size: 0.7rem;
-    position: relative;
 }
 
 .cardDiv img {
@@ -17,32 +14,32 @@
     -moz-border-radius: 20px 0px 0px 0px;
     -ms-border-radius: 20px 0px 0px 0px;
     -o-border-radius: 20px 0px 0px 0px;
-    position: relative;
-    top: 3px;
 }
 
 .cardBtn {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-color: red;
+    font-size: 0.5rem;
+    position: relative;
+    left: 170px;
+    top: 70px;
+    background-color: black;
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     z-index: 100;
 }
 
 .details {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 180px;
-    background-color: lightgray;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(85, 85, 85);
+    color: white;
     padding: 10px;
     border-radius: 0px 0px 20px 0px;
     -webkit-border-radius: 0px 0px 20px 0px;
@@ -52,6 +49,20 @@
 }
 
 .details h2 {
-    font-weight: 500;
     font-size: 0.9rem;
+    padding-right: 5px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    min-height: 47px;
+    font-weight: 900;
+    position: relative;
+    background-color: yellow;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    z-index: 1000;
+    width: 100%;
+    top: 210px
 }
