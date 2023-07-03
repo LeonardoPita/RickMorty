@@ -9,6 +9,11 @@ export default function SearchBar({ onSearch }) {
       setId(event.target.value)
    }
 
+   function handleButtonClick() {
+      onSearch(id);
+      setId('');
+   }
+
    return (
       <div className='container'>
          <div className={style.navFlex}>
@@ -19,11 +24,11 @@ export default function SearchBar({ onSearch }) {
             </div>
             <div className={style.searchBar}>
                <input
-                  type='search'
+                  type='number'
                   placeholder='ID...'
                   value={id}
                   onChange={handleChange} />
-               <button onClick={() => onSearch(id)}>Add</button>
+               <button onClick={handleButtonClick}>Add</button>
             </div>
          </div>
       </div>
