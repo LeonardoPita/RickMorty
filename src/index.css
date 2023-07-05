@@ -56,4 +56,5 @@ img {
 .App {
   background-image: url('../public/assets/images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg');
   min-height: 100vh;
+  background-size: cover;
 }
