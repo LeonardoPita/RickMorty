@@ -35,6 +35,7 @@ export default function SearchBar({ onSearch }) {
             <div className={style.searchBar}>
                <input
                   type='text'
+                  autoFocus
                   placeholder=' ID:'
                   value={id}
                   onChange={handleChange} />

@@ -6,6 +6,7 @@ import axios from 'axios';
 import { Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail.jsx';
+import Error from './components/Error/Error';
 
 
 function App() {
@@ -25,8 +26,7 @@ function App() {
             }
          })
          .catch((error) => {
-            alert('There are no character whith this id.');
-            console.error(error);
+            alert(error.response.data.error);
          });
    }
 
@@ -50,6 +50,10 @@ function App() {
             <Route
                path='/detail/:id'
                element={<Detail />}
+            />
+            <Route
+               path='*'
+               element={<Error />}
             />
          </Routes>
       </div>
