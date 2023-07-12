@@ -5,36 +5,63 @@
     height: 60px;
 }
 
-button {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 4px 10px;
+.menu {
+    display: flex;
+    column-gap: 30px;
+    color: black;
+    font-weight: 700;
     cursor: pointer;
-    box-shadow: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    font-size: 1.1rem;
 }
 
-.buttonGroup button {
-    margin-right: 60px;
+.menu li:hover {
+    color: yellow;
+    transition: 100ms;
+    -webkit-transition: 100ms;
+    -moz-transition: 100ms;
+    -ms-transition: 100ms;
+    -o-transition: 100ms;
 }
 
 .searchBar input {
+    position: relative;
+    top: -2px;
     background-color: black;
     color: white;
     font-weight: 900;
-    height: 23px;
+    height: 30px;
+    border: 1px yellow solid;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+
+.searchBar button {
+    font-weight: 900;
     position: relative;
-    top: 1px;
-    margin-right: 2px;
+    height: 30px;
+    font-size: 1rem;
+    color: yellow;
+    background-color: black;
     border: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border: 1px yellow solid;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+
+.activeTab {
+    border-bottom: 2px solid yellow;
+    color: yellow;
+    text-decoration: none;
+}
+
+.unactiveTab {
+    color: black;
+    border: none;
+    text-decoration: none;
 }

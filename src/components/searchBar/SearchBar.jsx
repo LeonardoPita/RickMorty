@@ -1,5 +1,6 @@
 import style from './SearchBar.module.css'
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom'
 
 export default function SearchBar({ onSearch }) {
 
@@ -17,15 +18,24 @@ export default function SearchBar({ onSearch }) {
    return (
       <div className='container'>
          <div className={style.navFlex}>
-            <div className={style.buttonGroup}>
-               <button >One</button>
-               <button >Two</button>
-               <button >Tree</button>
-            </div>
+            <ul className={style.menu}>
+               <NavLink
+                  to='/home'
+                  className={({ isActive }) => isActive ? style.activeTab
+                     : style.unactiveTab}>
+                  <li>HOME</li>
+               </NavLink>
+               <NavLink
+                  to='/about'
+                  className={({ isActive }) => isActive ? style.activeTab
+                     : style.unactiveTab}>
+                  <li>ABOUT</li>
+               </NavLink>
+            </ul>
             <div className={style.searchBar}>
                <input
-                  type='number'
-                  placeholder='ID...'
+                  type='text'
+                  placeholder=' ID:'
                   value={id}
                   onChange={handleChange} />
                <button onClick={handleButtonClick}>Add</button>
