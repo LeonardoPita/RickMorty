@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail.jsx';
 import Error from './components/Error/Error';
+import Form from './components/Form/Form';
 
 
 function App() {
