@@ -2,7 +2,7 @@ import style from './SearchBar.module.css'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 
-export default function SearchBar({ onSearch }) {
+export default function SearchBar({ onSearch, addRandomCharacter }) {
 
    const [id, setId] = useState('')
 
@@ -13,6 +13,10 @@ export default function SearchBar({ onSearch }) {
    function handleButtonClick() {
       onSearch(id);
       setId('');
+   }
+
+   function handleRandomClick() {
+      addRandomCharacter();
    }
 
    return (
@@ -29,14 +33,15 @@ export default function SearchBar({ onSearch }) {
                   to='/about'
                   className={({ isActive }) => isActive ? style.activeTab
                      : style.unactiveTab}>
-                  <li>ABOUT</li>
+                  <li>INFO</li>
                </NavLink>
             </ul>
             <div className={style.searchBar}>
+               <button onClick={handleRandomClick}>Add Random</button>
                <input
                   type='text'
                   autoFocus
-                  placeholder=' ID:'
+                  placeholder=' ID between 1 and 826.'
                   value={id}
                   onChange={handleChange} />
                <button onClick={handleButtonClick}>Add</button>

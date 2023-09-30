@@ -1,0 +1,17 @@
+.about {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: yellow;
+    margin: 100px auto;
+    max-width: 1290px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.about h1 {
+    margin-bottom: 30px;
+}
+
+.tutorial {
+    margin-top: 10px;
+}

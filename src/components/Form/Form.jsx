@@ -25,14 +25,17 @@ export default function Form({ login }) {
 
     return (
         <div className="container">
-            <form onSubmit={handleSubmit}>
+            <form className={style.form} onSubmit={handleSubmit} autoComplete="off">
+                <div className={style.description}>
+                    <p>Input any email and password to start.</p>
+                </div>
                 <label htmlFor="email">Email:</label>
-                <input type="text" name="email" onChange={handleChange} value={userData.email} />
+                <input className={style.input} type="text" name="email" onChange={handleChange} value={userData.email} />
                 {errors.email && (<p>{errors.email}</p>)}
                 <label htmlFor="password">Password:</label>
-                <input type="password" name="password" onChange={handleChange} value={userData.password} />
+                <input className={style.input} type="password" name="password" onChange={handleChange} value={userData.password} />
                 {errors.password && (<p>{errors.password}</p>)}
-                <button>SUBMIT</button>
+                <button className={style.submit}>SUBMIT</button>
             </form>
         </div>
     )
