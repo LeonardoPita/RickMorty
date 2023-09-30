@@ -30,10 +30,10 @@ export default function Form({ login }) {
                     <p>Input any email and password to start.</p>
                 </div>
                 <label htmlFor="email">Email:</label>
-                <input className={style.input} type="text" name="email" onChange={handleChange} value={userData.email} />
+                <input className={style.input} placeholder="Example@gmail.com" type="text" name="email" onChange={handleChange} value={userData.email} />
                 {errors.email && (<p>{errors.email}</p>)}
                 <label htmlFor="password">Password:</label>
-                <input className={style.input} type="password" name="password" onChange={handleChange} value={userData.password} />
+                <input className={style.input} placeholder="*******" type="password" name="password" onChange={handleChange} value={userData.password} />
                 {errors.password && (<p>{errors.password}</p>)}
                 <button className={style.submit}>SUBMIT</button>
             </form>

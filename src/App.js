@@ -90,7 +90,7 @@ function App() {
             />
             <Route
                path='/detail/:id'
-               element={<Detail />}
+               element={<Detail chars={chars} />}
             />
             <Route
                path='*'
