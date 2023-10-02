@@ -1,11 +1,12 @@
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import style from './Detail.module.css'
 
+
 export default function Detail() {
     const { id } = useParams()
-
+    const navigate = useNavigate()
     const [chars, setChars] = useState({})
 
 
@@ -22,9 +23,14 @@ export default function Detail() {
         return setChars({})
     }, [id]);
 
+    function handleBackButtonClick() {
+        navigate('/home'); // Navigate to the '/home' route when the button is clicked
+    }
+
     return (
         <div className={style.container}>
             <div>
+                <span className={style.backBtn} onClick={handleBackButtonClick}>X</span>
                 <h3>{chars.name}</h3>
                 <p>id: {id}</p>
                 <p>Species: {chars.species}</p>

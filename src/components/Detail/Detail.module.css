@@ -22,3 +22,18 @@ img {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
+.backBtn {
+    font-size: 18px;
+    color: yellow;
+    background-color: gray;
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 900;
+    margin-bottom: 20px;
+    position: relative;
+    top: -5px
+}

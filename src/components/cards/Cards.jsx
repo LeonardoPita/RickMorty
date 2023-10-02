@@ -1,4 +1,5 @@
 import Card from '../Card/Card.jsx';
+import Detail from "../Detail/Detail.jsx";
 import style from './Cards.module.css'
 
 export default function Cards({ chars, onClose }) {

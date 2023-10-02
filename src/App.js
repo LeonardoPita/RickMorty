@@ -13,23 +13,23 @@ import Form from './components/Form/Form';
 function App() {
 
    const navigate = useNavigate()
-   const [access, setAccess] = useState(false)
+   const [access, setAccess] = useState(true)
    const [chars, setChars] = useState([]);
    const { pathname } = useLocation();
 
 
-   function login(userData) {
-      if (userData.password && userData.email) {
-         setAccess(true)
-         navigate('/home')
-      }
-      else {
-         alert('Incorrect mail or password')
-      }
-   }
-   useEffect(() => {
-      !access && navigate('/');
-   }, [access, navigate]);
+   // function login(userData) {
+   //    if (userData.password && userData.email) {
+   //       setAccess(true)
+   //       navigate('/home')
+   //    }
+   //    else {
+   //       alert('Incorrect mail or password')
+   //    }
+   // }
+   // useEffect(() => {
+   //    !access && navigate('/');
+   // }, [access, navigate]);
 
    function onSearch(id) {
       axios(`https://rickandmortyapi.com/api/character/${id}`)
@@ -74,12 +74,12 @@ function App() {
 
    return (
       <div className='App'>
-         {pathname !== '/' && <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
+         {/*pathname !== '/' && */ <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
          <Routes>
-            <Route
+            {/* <Route
                path='/'
                element={<Form login={login} />}
-            />
+            /> */}
             <Route
                path='/home'
                element={<Cards chars={chars} onClose={onClose} />}
