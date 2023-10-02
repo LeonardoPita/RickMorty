@@ -24,7 +24,7 @@ export default function Detail() {
     }, [id]);
 
     function handleBackButtonClick() {
-        navigate('/home'); // Navigate to the '/home' route when the button is clicked
+        navigate('/RickMorty');
     }
 
     return (

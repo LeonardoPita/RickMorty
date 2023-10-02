@@ -2,13 +2,15 @@
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     color: yellow;
-    margin: 100px auto;
+    margin: 0px auto;
     text-align: left;
     font-size: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
+    position: relative;
+    top: 100px;
 }
 
 h3 {

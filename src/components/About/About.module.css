@@ -2,10 +2,12 @@
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     color: yellow;
-    margin: 100px auto;
+    margin: 0px auto;
     max-width: 1290px;
     text-align: left;
     font-size: 25px;
+    position: relative;
+    top: 50px;
 }
 
 .about h1 {
@@ -14,4 +16,20 @@
 
 .tutorial {
     margin-top: 10px;
+}
+
+.goHome {
+    background-color: gray;
+    color: yellow;
+    border: none;
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 30px auto;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }

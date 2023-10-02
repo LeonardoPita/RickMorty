@@ -24,7 +24,7 @@ export default function SearchBar({ onSearch, addRandomCharacter }) {
          <div className={style.navFlex}>
             <ul className={style.menu}>
                <NavLink
-                  to='/home'
+                  to='/RickMorty'
                   className={({ isActive }) => isActive ? style.activeTab
                      : style.unactiveTab}>
                   <li>HOME</li>

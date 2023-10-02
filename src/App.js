@@ -1,19 +1,19 @@
 import './App.css';
 import Nav from './components/Nav/Nav.jsx';
 import Cards from './components/Cards/Cards.jsx';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail.jsx';
 import Error from './components/Error/Error';
-import Form from './components/Form/Form';
+// import Form from './components/Form/Form';
 
 
 function App() {
 
-   const navigate = useNavigate()
-   const [access, setAccess] = useState(true)
+   // const navigate = useNavigate()
+   // const [access, setAccess] = useState(true)
    const [chars, setChars] = useState([]);
    const { pathname } = useLocation();
 
@@ -44,7 +44,7 @@ function App() {
             }
          })
          .catch((error) => {
-            alert(error.response.data.error);
+            alert('Wrong id, the id must be a number between 1 and 826.');
          });
    }
 
@@ -74,14 +74,14 @@ function App() {
 
    return (
       <div className='App'>
-         {/*pathname !== '/' && */ <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
+         {pathname === '/RickMorty' && <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
          <Routes>
             {/* <Route
                path='/'
                element={<Form login={login} />}
             /> */}
             <Route
-               path='/home'
+               path='/RickMorty'
                element={<Cards chars={chars} onClose={onClose} />}
             />
             <Route
