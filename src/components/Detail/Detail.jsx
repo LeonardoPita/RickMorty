@@ -24,7 +24,7 @@ export default function Detail() {
     }, [id]);
 
     function handleBackButtonClick() {
-        navigate('/RickMorty');
+        navigate('/');
     }
 
     return (

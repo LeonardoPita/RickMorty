@@ -6,7 +6,7 @@ export default function About() {
     const navigate = useNavigate()
 
     function handleBackButtonClick() {
-        navigate('/RickMorty');
+        navigate('/');
     }
 
     return (
