@@ -5,7 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import About from './components/About/About';
-import Detail from './components/Detail/Detail.jsx';
+import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
 // import Form from './components/Form/Form';
 
