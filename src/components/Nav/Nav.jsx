@@ -1,4 +1,4 @@
-import SearchBar from '../SearchBar/SearchBar.jsx'
+import SearchBar from '../SearchBar/SearchBar'
 import style from './Nav.module.css'
 
 export default function Nav({ onSearch, addRandomCharacter }) {
