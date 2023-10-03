@@ -1,0 +1,69 @@
+.navFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 30px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.menu li:hover {
+    color: yellow;
+    transition: 100ms;
+    -webkit-transition: 100ms;
+    -moz-transition: 100ms;
+    -ms-transition: 100ms;
+    -o-transition: 100ms;
+}
+
+.searchBar input {
+    position: relative;
+    top: -1px;
+    background-color: black;
+    color: yellow;
+    font-weight: 900;
+    height: 30px;
+    border: 1px yellow solid;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+
+.searchBar button {
+    font-weight: 900;
+    position: relative;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: yellow;
+    background-color: black;
+    border: none;
+    border: 1px yellow solid;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.activeTab {
+    border-bottom: 2px solid yellow;
+    color: yellow;
+    text-decoration: none;
+}
+
+.unactiveTab {
+    color: black;
+    border: none;
+    text-decoration: none;
+}
