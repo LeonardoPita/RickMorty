@@ -75,7 +75,7 @@ function App() {
    return (
       <div className='App'>
          {pathname === '/RickMorty' && <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
-         <Routes>
+         <Routes >
             {/* <Route
                path='/'
                element={<Form login={login} />}
