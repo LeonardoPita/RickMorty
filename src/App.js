@@ -81,7 +81,7 @@ function App() {
                element={<Form login={login} />}
             /> */}
             <Route
-               path='/RickMorty'
+               exact path='/'
                element={<Cards chars={chars} onClose={onClose} />}
             />
             <Route
