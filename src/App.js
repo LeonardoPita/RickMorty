@@ -74,7 +74,7 @@ function App() {
 
    return (
       <div className='App'>
-         {pathname === '/RickMorty' && <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
+         {/*pathname === '/RickMorty' && */ <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
          <Routes >
             {/* <Route
                path='/'
