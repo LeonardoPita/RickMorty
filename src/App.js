@@ -74,14 +74,14 @@ function App() {
 
    return (
       <div className='App'>
-         {pathname === '/RickMorty' && <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
+         {pathname === '/' && <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />}
          <Routes >
             {/* <Route
                path='/'
                element={<Form login={login} />}
             /> */}
             <Route
-               path='/RickMorty'
+               path='/'
                element={<Cards chars={chars} onClose={onClose} />}
             />
             <Route
