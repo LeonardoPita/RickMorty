@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RickMorty/static/css/main.5749191f.css",
-    "main.js": "/RickMorty/static/js/main.0c538077.js",
+    "main.js": "/RickMorty/static/js/main.a62e5f1c.js",
     "static/media/andy-holmes-rCbdp8VCYhQ-unsplash.jpg": "/RickMorty/static/media/andy-holmes-rCbdp8VCYhQ-unsplash.8b167763c941f7b6c839.jpg",
     "index.html": "/RickMorty/index.html",
     "main.5749191f.css.map": "/RickMorty/static/css/main.5749191f.css.map",
-    "main.0c538077.js.map": "/RickMorty/static/js/main.0c538077.js.map"
+    "main.a62e5f1c.js.map": "/RickMorty/static/js/main.a62e5f1c.js.map"
   },
   "entrypoints": [
     "static/css/main.5749191f.css",
-    "static/js/main.0c538077.js"
+    "static/js/main.a62e5f1c.js"
   ]
 }
